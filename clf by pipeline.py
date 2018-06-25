@@ -36,8 +36,8 @@ def model(train_set_in,test_set_in):
     step = [('vect',CountVectorizer(stop_words=stopwords)),
             ('tfidf',TfidfTransformer()),
 #             ('pca',PCA(n_components=3000)),
-            ('clf',RandomForestClassifier())
-#             ('clf',svm.SVC(kernel='poly', degree=2, gamma=1, coef0=0))]
+#             ('clf',RandomForestClassifier())
+            ('clf',svm.SVC(kernel='poly', degree=2, gamma=1, coef0=0))]
     ppl_clf = Pipeline(step)
     ppl_clf.fit(X_train,y_train)
     
@@ -54,12 +54,12 @@ def model(train_set_in,test_set_in):
 #     knn = KNeighborsClassifier()  
 #     dt = tree.DecisionTreeClassifier()
 #     ? MultinomialNB()
-def main():
-    segmentor = Segmentor() # 加载模型
-    segmentor.load('cws.model')
-    stopwords = [ line.rstrip() for line in open('stopwords',encoding='utf-8') ] #rstrip() 删除 str末尾的指定字符（默认为空格）
-    model('train_set0.txt','test_set0.txt')
-    segmentor.release()
+
+segmentor = Segmentor() # 加载模型
+segmentor.load('cws.model')
+stopwords = [ line.rstrip() for line in open('stopwords',encoding='utf-8') ] #rstrip() 删除 str末尾的指定字符（默认为空格）
+model('train_set1.txt','test_set0.txt')
+segmentor.release()
     
-if __name__ == "__main__":  
-    main()
+# if __name__ == "__main__":  
+#     main()
