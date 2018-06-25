@@ -33,13 +33,11 @@ def model(train_set_in,test_set_in):
     X_test,y_test = get_text_and_label(test_set_in)
 #     for i in range(10):
 #         print(y_test[i],X_test[i])
-    step = [
-            ('vect',CountVectorizer(stop_words=stopwords)),
+    step = [('vect',CountVectorizer(stop_words=stopwords)),
             ('tfidf',TfidfTransformer()),
 #             ('pca',PCA(n_components=3000)),
             ('clf',RandomForestClassifier())
-#             ('clf',svm.SVC(kernel='poly', degree=2, gamma=1, coef0=0))
-           ]
+#             ('clf',svm.SVC(kernel='poly', degree=2, gamma=1, coef0=0))]
     ppl_clf = Pipeline(step)
     ppl_clf.fit(X_train,y_train)
     
