@@ -1,4 +1,5 @@
 from pyltp import Segmentor  
+import numpy as np
 from sklearn.feature_extraction.text import TfidfTransformer #计算tfidf
 from sklearn.feature_extraction.text import CountVectorizer  #计算df 
 from sklearn.decomposition import PCA
@@ -11,7 +12,8 @@ from sklearn import tree
 from sklearn.externals import joblib
 from sklearn import metrics
 from sklearn.pipeline import Pipeline
-import numpy as np
+from sklearn.multioutput import MultiOutputClassifier
+segmentor = Segmentor() # 加载模型
 X_train = []
 y_train = []
 X_text = []
@@ -36,17 +38,24 @@ def model(train_set_in,test_set_in):
     step = [('vect',CountVectorizer(stop_words=stopwords)),
             ('tfidf',TfidfTransformer()),
 #             ('pca',PCA(n_components=3000)),
-#             ('clf',RandomForestClassifier())
-            ('clf',svm.SVC(kernel='poly', degree=2, gamma=1, coef0=0))]
+            ('clf',RandomForestClassifier()),
+#             ('clf',svm.SVC(C = 1,kernel='poly', degree=2, gamma=1, coef0=0))
+           ]
+    
     ppl_clf = Pipeline(step)
     ppl_clf.fit(X_train,y_train)
-    
+    probability = ppl_clf.predict_proba(X_test)
+#     for p in probability:
+        
+#     print(size(probability))# 输出分类概率
+
     joblib.dump(ppl_clf,'train_model.m') #保存模型
 #     ppl_clf = joblib.load('train_model.m') #加载模型   
+    
     prediction = ppl_clf.predict(X_test)
     precision = np.mean(prediction == y_test)  # 准确率
     print(metrics.classification_report(y_test,prediction))
-    print(metrics.confusion_matrix(y_test,prediction))
+    print(metrics.confusion_matrix(y_test,prediction)) #混淆矩阵
     
 #     svc=svm.SVC(C=1,kernel='poly',degree=3,gamma=10,coef0=0) #选择模型 & 参数
 #     lr = LogisticRegression()
@@ -55,11 +64,11 @@ def model(train_set_in,test_set_in):
 #     dt = tree.DecisionTreeClassifier()
 #     ? MultinomialNB()
 
-segmentor = Segmentor() # 加载模型
-segmentor.load('cws.model')
-stopwords = [ line.rstrip() for line in open('stopwords',encoding='utf-8') ] #rstrip() 删除 str末尾的指定字符（默认为空格）
-model('train_set1.txt','test_set0.txt')
-segmentor.release()
-    
-# if __name__ == "__main__":  
-#     main()
+def main(): 
+    segmentor.load('cws.model')
+    stopwords = [ line.rstrip() for line in open('stopwords',encoding='utf-8') ] #rstrip() 删除 str末尾的指定字符（默认为空格）
+    model('train_set0.txt','test_set0.txt')
+    segmentor.release()
+
+if __name__ == "__main__":  
+    main()
