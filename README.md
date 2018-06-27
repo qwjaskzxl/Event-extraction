@@ -13,7 +13,7 @@ The 9 types of corresponding labels are as follows:
 | - |-| -|-|-|-|-|-|-|
 |0|1|2|3|4|5|6|7|8|
 
-<center>type dictionary</center>
+<center> type dictionary </center>
    
 ## 3.Extract samples
 [out.txt](:storage\3cb00c28-f19b-4703-bfdb-baa843b33176\ec4b2bcc.txt) 一个txt的文本文件，是文本分类中的原始数据 ，它来自ace语料库。
