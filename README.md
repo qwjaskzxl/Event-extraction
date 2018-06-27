@@ -10,6 +10,7 @@
 <div align=center><img width="554.8" height="200" src="https://github.com/qwjaskzxl/event_classification/blob/master/image/ace%20corpus.png" alt="ace corpus"/></div>
 
 The 8 types of corresponding labels are as follows:
+
 |Notanyclass|	Life|Movement|Transaction|Business|Conflict|Contact	|Personnel|Justice|
 | - |-| -|-|-|-|-|-|-|
 |0|1|2|3|4|5|6|7|8|
