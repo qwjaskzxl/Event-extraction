@@ -15,15 +15,15 @@ The 9 types of corresponding labels are as follows:
 <p align="center">type dictionary</p>
    
 ## 3.Extract samples
-[out.txt](:storage\3cb00c28-f19b-4703-bfdb-baa843b33176\ec4b2bcc.txt) 一个txt的文本文件，是文本分类中的原始数据 ，它来自ace语料库。
-   其中中文633篇，包括bn，nw，wl。其中取66篇文章作为测试集，剩下的567篇作为训练集，从训练集中随机选取33篇文章作为验证集。
+[out.txt](:storage\3cb00c28-f19b-4703-bfdb-baa843b33176\ec4b2bcc.txt) 
+   66 articles were selected as the test set, the remaining 567 as training set, and 33 articles selected randomly from the training set as the validation set.
    
    **dataset**：
    [train_set](https://github.com/qwjaskzxl/text-classification/blob/master/samples/train_set.txt) ／
    [test_set](https://github.com/qwjaskzxl/text-classification/blob/master/samples/test_set.txt) ／
    [validation set](https://github.com/qwjaskzxl/text-classification/blob/master/samples/ver_set.txt)
    
-    方法是etree读取XML文件，使用Find找到对应的标签，XPath返回需要标签下的内容
+    The way is to read the XML file from "etree", find the corresponding tag by "Find", and "XPath" return the content that needs to be tagged.
 ## 4.Pre Processing
   预处理包括1.把文本处理为模型需要的格式。2.分词。3.去停用词。
   分词：使用Pyltp的cws分词模型，将整个文本集进行处理，返回一个分完词的列表。
