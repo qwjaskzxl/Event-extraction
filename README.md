@@ -18,7 +18,7 @@ The 9 types of corresponding labels are as follows:
 [out.txt](:storage\3cb00c28-f19b-4703-bfdb-baa843b33176\ec4b2bcc.txt) 一个txt的文本文件，是文本分类中的原始数据 ，它来自ace语料库。
    其中中文633篇，包括bn，nw，wl。其中取66篇文章作为测试集，剩下的567篇作为训练集，从训练集中随机选取33篇文章作为验证集。
    
-   **dataset**　
+   **dataset**　：
    [train_set](https://github.com/qwjaskzxl/text-classification/blob/master/samples/train_set.txt) ／
    [test_set](https://github.com/qwjaskzxl/text-classification/blob/master/samples/test_set.txt) ／
    [validation set](https://github.com/qwjaskzxl/text-classification/blob/master/samples/ver_set.txt)
