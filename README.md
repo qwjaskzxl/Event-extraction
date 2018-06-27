@@ -3,7 +3,7 @@
    **Function** : This project constructs a model to implement test classification through different machine learning algorithms.<br><br>
    **Development environment** : python 3
 
-## 1.corpus
+## 2.corpus
   We use the----ACE corpus, which is commonly used in event extraction, as our original dataset.
 <div align=center><img width="554.8" height="200" src="https://github.com/qwjaskzxl/event_classification/blob/master/image/ace%20corpus.png" alt="ace corpus"/></div>
 
