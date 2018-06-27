@@ -1,6 +1,6 @@
 # test_classification
 ## 1.Introduction
-   Function : This project constructs a model to implement test classification through different machine learning algorithms.<br><br>
+   *Function* : This project constructs a model to implement test classification through different machine learning algorithms.<br><br>
    Development environment : python 3
    
 ## 1.type_dict
