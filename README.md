@@ -1,4 +1,6 @@
 # test_classification
+## 1.Introduction
+   we build
 ## 1.type_dict
 |Notanyclass|	Life|Movement|Transaction|Business|Conflict|Contact	|Personnel|Justice|
 | - |-| -|-|-|-|-|-|-|
