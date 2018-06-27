@@ -13,6 +13,7 @@ The 9 types of corresponding labels are as follows:
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |0|1|2|3|4|5|6|7|8|
 
+<p align="center">type dictionary</p>
 <center> type dictionary </center>
    
 ## 3.Extract samples
