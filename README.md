@@ -25,9 +25,7 @@ The 9 types of corresponding labels are as follows:
    [train_set]([text-classification/train_set.txt at master · qwjaskzxl/text-classification · GitHub])
    [validation set]([text-classification/ver_set.txt at master · qwjaskzxl/text-classification · GitHub])
    
-   .
-    方法是XX
-    
+    方法是 xxx
 ## 4.Pre Processing
   预处理包括1.把文本处理为模型需要的格式。2.分词。3.去停用词。
   预处理的代码：[etree.py](:storage\7baa3ef0-d75e-4c64-bedc-f451dda79824\43150200.py)
