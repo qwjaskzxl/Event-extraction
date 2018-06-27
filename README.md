@@ -20,9 +20,10 @@ The 9 types of corresponding labels are as follows:
    
    ### dataset
   
-   [test_set]（[text-classification/test_set.txt at master · qwjaskzxl/text-classification · GitHub]
-   [train_set]（[text-classification/train_set.txt at master · qwjaskzxl/text-classification · GitHub]
-   [validation set]（[text-classification/ver_set.txt at master · qwjaskzxl/text-classification · GitHub]
+   [test_set][text-classification/test_set.txt at master · qwjaskzxl/text-classification · GitHub]
+   [train_set][text-classification/train_set.txt at master · qwjaskzxl/text-classification · GitHub]
+   [validation set][text-classification/ver_set.txt at master · qwjaskzxl/text-classification · GitHub]
+   
    .
     方法是XX
     
