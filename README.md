@@ -12,6 +12,7 @@ The 9 types of corresponding labels are as follows:
 |Notanyclass|	Life|Movement|Transaction|Business|Conflict|Contact	|Personnel|Justice|
 | - |-| -|-|-|-|-|-|-|
 |0|1|2|3|4|5|6|7|8|
+
 <center>type dictionary</center>
    
 ## 3.Extract samples
