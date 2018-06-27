@@ -19,8 +19,8 @@ The 9 types of corresponding labels are as follows:
    其中中文633篇，包括bn，nw，wl。其中取66篇文章作为测试集，剩下的567篇作为训练集，从训练集中随机选取33篇文章作为验证集。
    
    **dataset**　
-   [train_set](https://github.com/qwjaskzxl/text-classification/blob/master/samples/train_set.txt) 
-   [test_set](https://github.com/qwjaskzxl/text-classification/blob/master/samples/test_set.txt) 
+   [train_set](https://github.com/qwjaskzxl/text-classification/blob/master/samples/train_set.txt) ／
+   [test_set](https://github.com/qwjaskzxl/text-classification/blob/master/samples/test_set.txt) ／
    [validation set](https://github.com/qwjaskzxl/text-classification/blob/master/samples/ver_set.txt)
    
     方法是 xxx
