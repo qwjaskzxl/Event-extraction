@@ -4,7 +4,7 @@
 | - |-| -|-|-|-|-|-|-|
 |0|1|2|3|4|5|6|7|8|
 
-## 2.原始数据
+## 2.corpus
 <div align=center><img width="554.8" height="200" src="https://github.com/qwjaskzxl/event_classification/blob/master/image/ace%20corpus.png" alt="ace corpus"/></div>
 
 [out.txt](:storage\3cb00c28-f19b-4703-bfdb-baa843b33176\ec4b2bcc.txt) 一个txt的文本文件，是文本分类中的原始数据 ，它来自ace语料库。
